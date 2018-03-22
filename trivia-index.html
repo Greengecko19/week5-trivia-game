@@ -14,16 +14,16 @@
     
 <div class="container" style="margin:auto">
     <div class="row">
-        <h3 class="text-center">Kamran's Super Trivia!</h3>
+        <!-- <h3 class="text-center">Kamran's Super Trivia!</h3> -->
         <img src="assets/images/Super Trivia banner.png" alt="Kamran's Super Trivia!" style="height:300px; width:auto">
     </div>
 
     <!-- Timer -->
     <div class="row">
-        <button class ="btn btn-primary btn-block center" style=width:40%>Start!</button>    
+        <button class ="btn btn-primary btn-block center" style=width:25% onclick="countdown()">Start!</button>
     </div>
     <div class="row">
-        <h2 class="center" id="status">Time Remaining:  <span id="timer"></span></h2>
+        <h2 class="center" id="status">Time Remaining:  <span id="timer">0</span> seconds</h2>
     </div>
 
     <!-- Question 1 -->
@@ -68,21 +68,28 @@
 
       <!-- Question 4 -->
       <div class="col-sm-6">  
-        <h2>What's the best sport in the world?</h2>
+        <h2>What's the best TV show of all time?</h2>
             <form>
-                <input type="radio" name="q4" value="Curling"> Curling<br>
-                <input type="radio" name="q4" value="Hacky Sack"> Hacky Sack<br>
-                <input type="radio" name="q4" value="Cheese Rolling"> Cheese Rolling<br>
-                <input type="radio" name="q4" value="Thumb Wrestling"> Thumb Wrestling<br>
-                <input type="radio" name="q4" value="Wife Carrying"> Wife Carrying
+                <input type="radio" name="q4" value="Batman (original series)"> Batman (original series)<br>
+                <input type="radio" name="q4" value="Get Smart"> Get Smart<br>
+                <input type="radio" name="q4" value="The A-Team"> The A-Team<br>
+                <input type="radio" name="q4" value="MacGyver"> MacGyver<br>
+                <input type="radio" name="q4" value="The Love Boat"> The Love Boat
             </form>
         </div>
 
     </div>
 
+    <div class="col-md-5">
+        <h1><small>Number correct:  </small><span id="number-correct"></span></h1>
+    </div>
+
+    <div class="col-md-5">
+        <h1><small>Number incorrect:  </small><span id="number-incorrect"></span></h1>
+    </div>
+
+
 
 </div>
-
-
 </body>
 </html>
